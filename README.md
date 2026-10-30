@@ -3,7 +3,7 @@ This repository contains the code used to reproduce the main statistical results
 
 Author: Adrian Lin
 
-Last updated: 9/17/2026
+Last updated: 10/30/2026
 
 ## Instructions
 Download the full repository and run MainScript.m
