@@ -5,6 +5,8 @@ library(ggplot2)
 tasks <- c("FlexorSynergy", "ShoulderFlex", "Grasp")
 metrics <- c("cs")
 
+set.seed(42)
+
 for(metric in metrics){
   for(task in tasks){
     
@@ -24,12 +26,12 @@ for(metric in metrics){
     # For permanova, dispersions should be homogeneous (non-significant result)
     cat("Homogeneity of Dispersions Test (betadisper):\n")
     disp <- betadisper(dist_obj, groups$group)
-    print(permutest(disp, permutations = 999))
+    print(permutest(disp, permutations = 9999))
     print(anova(disp))
     cat("\n")
     
     # Run permanova
-    results <- adonis2(dist_obj ~ group, data = groups, permutations = 999)
+    results <- adonis2(dist_obj ~ group, data = groups, permutations = 9999)
     print(results)
     cat("\n")
     
