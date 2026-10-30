@@ -32,4 +32,5 @@ This script uses csv's of the contrast distributions that are created in `runCon
 
 ### Other Notes
 Please note that the code for DIEM can be found here: https://github.com/ftessari23/DIEM.
+
     Tessari, F., Yao, K., & Hogan, N. (2024). Surpassing Cosine Similarity for Multidimensional Comparisons: Dimension Insensitive Euclidean Metric (DIEM). ArXiv.org. https://arxiv.org/abs/2407.08623
