@@ -1,10 +1,6 @@
 function [sim_results] = computeMainStats(within_data, ref_data)
 % GOAL: compare within-group similarity distributions against reference
 %       similarity distributions to determine significant differences
-% Outputs:
-%    stats_results: struct with results of all statistical tests
-%    within_data: struct with arrays of within-group distributions
-%    ref_data: array of the reference distribution
 
 % Get score group indices (Severe/Moderate/Mild)
 score_groups = {'Severe','Moderate','Mild'};
